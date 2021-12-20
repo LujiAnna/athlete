@@ -1,0 +1,303 @@
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    /* add pattern-grey for background as a default background if you wish*/
+    /* background: url('../img/1.jpg') center center; */
+}
+
+.container {
+    max-width: 1340px;
+}
+
+
+/* SECTION COVER  */
+
+#cover {
+    height: 100%;
+    background: url('../img/2.jpg') center;
+    background-size: cover;
+    color: white;
+}
+
+.wall-sticker {
+    background: rgba(0, 0, 0, 0.39);
+    padding: 10rem 12rem 10rem 4rem;
+    font-size: 5rem;
+    color: white;
+}
+
+.moto {
+    font-size: 3rem;
+    margin-top: 180px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+
+/* BUTTONS */
+
+.btn-lg,
+.btn-success-outline {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(19, 128, 26, 1);
+    transition: 0.5s;
+}
+
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active,
+.btn-success-outline:hover,
+.btn-success-outline:focus,
+.btn-success-outline:active {
+    background-color: rgba(19, 128, 35, 0.503);
+    border: 1px solid rgba(19, 128, 26, 0);
+    transition: 0.5s;
+}
+
+.fa-hand-point-down {
+    margin-top: 50px;
+    margin-left: 25rem;
+    font-size: 2.5rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.fa-hand-point-down:hover {
+    color: rgba(19, 128, 35, 0.503);
+    transition: 0.3s;
+}
+
+
+/* ICON */
+
+.fa-heart {
+    color: rgb(255, 251, 11);
+}
+
+
+/* SPANS */
+
+.bold-green {
+    color: rgba(19, 128, 26, 0.9);
+}
+
+.green-underline {
+    border-bottom: 1px solid rgba(19, 128, 35, 0.503);
+}
+
+
+/* NAVBAR */
+
+.navbar-brand {
+    padding-left: 25px;
+}
+
+.nav-link {
+    margin-right: 25px;
+}
+
+#main-nav li a {
+    /* border-bottom: 1px solid transparent; */
+    transition: 0.5s;
+}
+
+#main-nav li a:hover {
+    border-bottom: 1px solid green;
+    transition: 0.5s;
+}
+
+
+/* SECTION-PARALLAX */
+
+#section-parallax {
+    text-align: center;
+    background: url('../img/1.jpg') center repeat fixed;
+    padding: 180px 0;
+    background-size: cover;
+    color: white;
+}
+
+.parallax-btn {
+    margin: 30px auto 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #222;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-right: 25px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    font-size: 160%;
+    transition: 0.2s;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter-square:hover {
+    color: #00aced;
+}
+
+.fa-google-plus-square:hover {
+    color: #dd4b39;
+}
+
+.fa-instagram-square:hover {
+    color: #517fa4;
+}
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-google-plus-square,
+.fa-instagram-square {
+    transition: 0.2s;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.fa-chevron-circle-up {
+    color: rgba(14, 96, 2);
+    text-align: center;
+    margin-top: 35px;
+    transition: 0.2s;
+}
+
+.fa-chevron-circle-up:hover {
+    transition: 0.2s;
+    color: rgba(14, 96, 26, 0.91);
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 2560px) {
+    .wall-sticker {
+        padding: 12rem 10rem 5rem 2rem;
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .wall-sticker {
+        font-size: 4.5rem;
+    }
+}
+
+
+/* footer social media icons get out of order/place on ipad resolution */
+
+
+/* check dev tools screen resize from 1225px reduce font size */
+
+@media only screen and (max-width: 1225px) {
+    .fa-facebook-square,
+    .fa-twitter-square,
+    .fa-google-plus-square,
+    .fa-instagram-square {
+        font-size: 43px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        font-size: 15px;
+    }
+    .fa-hand-point-down {
+        position: absolute;
+        right: 135px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .fa-facebook-square,
+    .fa-twitter-square,
+    .fa-google-plus-square,
+    .fa-instagram-square {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .moto {
+        font-size: 2.3rem;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .social-links li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 40px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    /* make this disappear */
+    .moto {
+        display: none;
+    }
+    .fa-hand-point-down {
+        position: absolute;
+        right: 100px;
+        top: 250px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .wall-sticker {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* make this disappear */
+    .fa-hand-point-down {
+        display: none;
+    }
+    .wall-sticker {
+        padding: 5rem 10rem 5rem 2rem;
+        font-size: 4rem;
+    }
+}
+
+
+/* other breaking points are 1920px, 1200px, 1024px, 992px, 768px */
